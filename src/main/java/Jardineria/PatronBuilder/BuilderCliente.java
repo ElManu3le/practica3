@@ -10,7 +10,7 @@ public class BuilderCliente {
         int telefono, double limite_credit, String codigo_empleado_rep_ventas) {
 
             cliente = new cliente(codigo_cliente, nombre_cliente, domicilio, telefono,
-             codigo_cliente, codigo_empleado_rep_ventas);
+             codigo_cliente, codigo_empleado_rep_ventas, false, false);
 
     }
 
