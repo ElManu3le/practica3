@@ -10,8 +10,10 @@ public class clienteDao implements Dao<cliente> {
 
     public clienteDao() {
 
-        clientes.add(new cliente(1234, "nombre_cliente", false, false, "domicilio", null, null, 660442980, 1200.7,
+        clientes.add(new cliente(1234, "nombre_cliente", "domicilio", null, null, 660442980, 1200.7,
                 "codigo_empleado_rep_ventas"));
+
+        clientes.add(new cliente(1, "Dario prfe", "excelsior@gmail.com", "password", "domicilio", 976741478, limite_credit, codigo_empleado_rep_ventas)
 
     }
 

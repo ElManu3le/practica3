@@ -17,7 +17,7 @@ public class BuilderCliente {
     public cliente Buildeo() {
 
         if (cliente.getNombre_cliente()==null) {
-            System.out.println("añade un nuevo nombre");
+            System.out.println("añade un nuevo nombre: ");
             
             return null;
             

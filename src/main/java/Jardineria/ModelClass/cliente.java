@@ -4,8 +4,7 @@ public class cliente {
 
     private int codigo_cliente;
     private String nombre_cliente;
-    private boolean NIE;
-    private boolean DNI;
+    
     private String email;
     private String password;
     private String domicilio;
@@ -13,12 +12,11 @@ public class cliente {
     private double limite_credit;
     private String codigo_empleado_rep_ventas;
 
-    public cliente(int codigo_cliente, String nombre_cliente, boolean nIE, boolean dNI, String email, String password,
+    public cliente(int codigo_cliente, String nombre_cliente, String email, String password,
             String domicilio, int telefono, double limite_credit, String codigo_empleado_rep_ventas) {
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
-        NIE = nIE;
-        DNI = dNI;
+        
         this.email = email;
         this.password = password;
         this.domicilio = domicilio;
@@ -46,21 +44,7 @@ public class cliente {
         this.nombre_cliente = nombre_cliente;
     }
 
-    public boolean isNIE() {
-        return NIE;
-    }
-
-    public void setNIE(boolean nIE) {
-        NIE = nIE;
-    }
-
-    public boolean isDNI() {
-        return DNI;
-    }
-
-    public void setDNI(boolean dNI) {
-        DNI = dNI;
-    }
+    
 
     public String getEmail() {
         return email;
