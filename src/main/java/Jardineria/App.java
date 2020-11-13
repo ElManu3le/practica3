@@ -20,9 +20,9 @@ public class App {
         pedidosDao = new pedidosDao(clientesDao);
 
         try {
-            clientesDao.save(new BuilderCliente(69, "Dario", "zaragoza", 696969696, 69.69, "9669p").Buildeo());
+            clientesDao.save(new BuilderCliente(70, "Dario", "zaragoza", 696969696, 69.69, "9669p").Buildeo());
         } catch (Exception e) {
-            System.out.println("Has intentado meter uno duplicado, vuelvelo a hacer");
+            System.out.println("Has intentado duplicar a un cliente, vuelvelo a intentar    " + clientesDao);
 
         }
 
@@ -33,7 +33,8 @@ public class App {
             pedidosDao.save(
                     new BuilderPedido(1, 12, Calendar.getInstance(), millegada, "estado", "comentarios").Buildeo());
         } catch (Exception e) {
-            System.out.println("Has intentado meter uno duplicado, vuelvelo a hacer");
+            System.out.println("Has intentado meter un pedido duplicado, vuelve a hacerlo    ");
+            
 
         }
 
