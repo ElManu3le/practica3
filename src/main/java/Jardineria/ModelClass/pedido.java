@@ -69,4 +69,13 @@ public class pedido {
         this.comentarios = comentarios;
     }
 
+    @Override
+    public String toString() {
+        return "pedido [codigo_pedido=" + codigo_pedido + ", codigo_pedido_cliente=" + codigo_pedido_cliente
+                + ", comentarios=" + comentarios + ", estado=" + estado + ", fecha_entrega=" + fecha_entrega
+                + ", fecha_pedido=" + fecha_pedido + "]";
+    }
+
+    
+
 }
