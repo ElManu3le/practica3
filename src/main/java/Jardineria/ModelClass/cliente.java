@@ -2,15 +2,14 @@ package Jardineria.ModelClass;
 
 public class cliente {
 
-    public enum DocumentoIdentidad{
-        DNI,
-        NIE;
+    public enum DocumentoIdentidad {
+        DNI, NIE;
 
     }
 
     private int codigo_cliente;
     private String nombre_cliente;
-    
+
     private String domicilio;
     private int telefono;
     private double limite_credit;
@@ -21,11 +20,11 @@ public class cliente {
     private String email;
     private String password;
 
-    public cliente(int codigo_cliente, String nombre_cliente, String email, String password,
-            String domicilio, int telefono, double limite_credit, String codigo_empleado_rep_ventas) {
+    public cliente(int codigo_cliente, String nombre_cliente, String email, String password, String domicilio,
+            int telefono, double limite_credit, String codigo_empleado_rep_ventas) {
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
-        
+
         this.email = email;
         this.password = password;
         this.domicilio = domicilio;
@@ -34,10 +33,9 @@ public class cliente {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
 
-
-    //Constructor de la practica3
+    // Constructor de la practica3
     public cliente(int codigo_cliente, String nombre_cliente, DocumentoIdentidad tipoDocumento, String dNI,
-            String email, String password) { 
+            String email, String password) {
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
         this.tipoDocumento = tipoDocumento;
@@ -94,21 +92,6 @@ public class cliente {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
 
-<<<<<<< HEAD
-    @Override
-    public String toString() {
-        return "cliente [codigo_cliente=" + codigo_cliente 
-        + ", codigo_empleado_rep_ventas="  + codigo_empleado_rep_ventas 
-        + ", domicilio=" + domicilio 
-        + ", email=" + email 
-        + ", limite_credit="  + limite_credit 
-        + ", nombre_cliente=" + nombre_cliente 
-        + ", password=" + password 
-        + ", telefono=" + telefono + "]";
-    }
-
-    
-=======
     public DocumentoIdentidad getTipoDocumento() {
         return tipoDocumento;
     }
@@ -155,21 +138,5 @@ public class cliente {
         + ", telefono=" + telefono 
         + ", tipoDocumento=" + tipoDocumento + "]";
     }
-
-    
-
-    
-
-    
-
-
-
-    
->>>>>>> 8af56308c513ad95a8f102dd4b87aad72c37ba4a
-    
-
-    
-
-    
 
 }

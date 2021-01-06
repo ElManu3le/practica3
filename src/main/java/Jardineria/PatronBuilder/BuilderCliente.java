@@ -22,13 +22,13 @@ public class BuilderCliente {
         for (cliente cliente : clientesguardados) {
 
             if (codigo_cliente == cliente.getCodigo_cliente()) {
-                throw new Exception("Codigo en uso!!!");
+                throw new Exception("Codigo en uso, por lo que ya exist un cliente asi!!!");
             }
 
         }
 
         if (DNI.length() != 9) {
-            throw new Exception("ESte codigo de identidad no tiene 9 digitos!!");
+            throw new Exception("ESte codigo de identidad no llega a los 9 digitos!!");
         }
         if (tipoIdentidad == DocumentoIdentidad.DNI) { // Comprueba los numerets del DNI.
             char letra = DNI.toUpperCase().charAt(8); // Guardo el ultimo digito en la variable de la "letra".
