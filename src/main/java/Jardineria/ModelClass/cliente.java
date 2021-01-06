@@ -93,6 +93,20 @@ public class cliente {
     public void setCodigo_empleado_rep_ventas(String codigo_empleado_rep_ventas) {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
+
+    @Override
+    public String toString() {
+        return "cliente [codigo_cliente=" + codigo_cliente 
+        + ", codigo_empleado_rep_ventas="  + codigo_empleado_rep_ventas 
+        + ", domicilio=" + domicilio 
+        + ", email=" + email 
+        + ", limite_credit="  + limite_credit 
+        + ", nombre_cliente=" + nombre_cliente 
+        + ", password=" + password 
+        + ", telefono=" + telefono + "]";
+    }
+
+    
     
 
     

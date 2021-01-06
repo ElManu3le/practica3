@@ -5,8 +5,8 @@ import java.util.Calendar;
 import Jardineria.ModelClass.cliente;
 import Jardineria.ModelClass.pedido;
 import Jardineria.ModelClassDao.Dao;
-import Jardineria.ModelClassDao.clienteDao;
 import Jardineria.ModelClassDao.pedidosDao;
+import Jardineria.ModelClassDao.clienteDao;
 import Jardineria.PatronBuilder.BuilderCliente;
 import Jardineria.PatronBuilder.BuilderPedido;
 
@@ -17,7 +17,7 @@ public class App {
 
     public static void main(String[] args) {
         clientesDao = new clienteDao();
-        pedidosDao = new pedidosDao(clientesDao);
+        pedidosDao = new pedidosDao();
 
         try {
             clientesDao.save(new BuilderCliente(70, "Dario", "zaragoza", 696969696, 69.69, "9669p").Buildeo());
