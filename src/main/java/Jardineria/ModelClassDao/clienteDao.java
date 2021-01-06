@@ -6,11 +6,16 @@ import Jardineria.ModelClass.cliente;
 
 public class clienteDao implements Dao<cliente> {
 
-    private List<cliente> clientes = new ArrayList<>();
+    private static List<cliente> clientes = new ArrayList<cliente>();
 
     public clienteDao() {
 
+<<<<<<< HEAD
         clientes.add(new cliente(1, "Dario prfe", "excelsior@gmail.com", "password", "domicilio", 976741478, 1111.9 , "codigo_empleado_rep_ventas"));
+=======
+        // clientes.add(new cliente(1, "Dario prfe", "excelsior@gmail.com", "password",
+        // "domicilio", 976741478, 69.69, "codigo_empleado_rep_ventas"));
+>>>>>>> 8af56308c513ad95a8f102dd4b87aad72c37ba4a
 
     }
 
@@ -46,19 +51,19 @@ public class clienteDao implements Dao<cliente> {
     }
 
     @Override
-    public void update(cliente t, String[] params) {
-
-        t.setNombre_cliente("predeterminado");
-        t.setCodigo_cliente(111);
-        t.setDomicilio("domicilio");
-        t.setLimite_credit(6666666);
-        t.setCodigo_empleado_rep_ventas("codigo_empleado_rep_ventas");
+    public void delete(cliente t) {
+        clientes.remove(t);
 
     }
 
     @Override
-    public void delete(cliente t) {
-        clientes.remove(t);
+    public void update(cliente t, String[] params) {
+
+        t.setNombre_cliente("Manolo");
+        t.setCodigo_cliente(1);
+        t.setDomicilio("Calle");
+        t.setLimite_credit(10);
+        t.setCodigo_empleado_rep_ventas("69gg");
 
     }
 

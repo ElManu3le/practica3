@@ -69,12 +69,21 @@ public class pedido {
         this.comentarios = comentarios;
     }
 
+<<<<<<< HEAD
 	@Override
 	public String toString() {
 		return "pedido [codigo_pedido=" + codigo_pedido + ", codigo_pedido_cliente=" + codigo_pedido_cliente
 				+ ", comentarios=" + comentarios + ", estado=" + estado + ", fecha_entrega=" + fecha_entrega
 				+ ", fecha_pedido=" + fecha_pedido + "]";
 	}
+=======
+    @Override
+    public String toString() {
+        return "pedido [codigo_pedido=" + codigo_pedido + ", codigo_pedido_cliente=" + codigo_pedido_cliente
+                + ", comentarios=" + comentarios + ", estado=" + estado + ", fecha_entrega=" + fecha_entrega
+                + ", fecha_pedido=" + fecha_pedido + "]";
+    }
+>>>>>>> 8af56308c513ad95a8f102dd4b87aad72c37ba4a
 
     
 
