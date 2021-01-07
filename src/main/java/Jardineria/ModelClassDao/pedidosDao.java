@@ -68,6 +68,4 @@ public class pedidosDao implements Dao<pedido> {
 
     }
 
-	
-
 }

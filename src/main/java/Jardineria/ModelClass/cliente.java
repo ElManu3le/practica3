@@ -33,16 +33,23 @@ public class cliente {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
 
-    // Constructor de la practica3
-    public cliente(int codigo_cliente, String nombre_cliente, DocumentoIdentidad tipoDocumento, String dNI,
-            String email, String password) {
+    // Constructor de la practica3    
+    public cliente(int codigo_cliente, String nombre_cliente, String domicilio, int telefono, double limite_credit,
+            String codigo_empleado_rep_ventas, DocumentoIdentidad tipoDocumento, String dNI, String email,
+            String password) {
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
+        this.domicilio = domicilio;
+        this.telefono = telefono;
+        this.limite_credit = limite_credit;
+        this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
         this.tipoDocumento = tipoDocumento;
         DNI = dNI;
         this.email = email;
         this.password = password;
     }
+
+    
 
     public int getCodigo_cliente() {
         return codigo_cliente;
@@ -138,5 +145,6 @@ public class cliente {
         + ", telefono=" + telefono 
         + ", tipoDocumento=" + tipoDocumento + "]";
     }
+
 
 }
